@@ -27,7 +27,9 @@ jobs:
         run: chmod +x gradlew
 
       - name: Build the mod
-        run: ./gradlew build
+        run: |
+          ./gradlew build
+          rm -f build/libs/*-sources.jar
 
       - name: Create Github Release and upload jar
         uses: softprops/action-gh-release@v3.0.0
