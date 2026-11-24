@@ -35,8 +35,7 @@ jobs:
         uses: softprops/action-gh-release@v3.0.0
         with:
           name: ${{ github.ref_name }}
-          files: |
-            build/libs/*.jar
+          files: build/libs/*.jar
           fail_on_unmatched_files: true
           generate_release_notes: ${{ github.ref_name != 'v1.0.0' }}
           prerelease: ${{ contains(github.ref_name, '-') }}
