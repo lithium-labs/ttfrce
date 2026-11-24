@@ -1,0 +1,17 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "el.weirdo.ttfrce.mixin",
+  "compatibilityLevel": "JAVA_25",
+  "client": [
+    "TrueTypeGlyphProviderMixin",
+    "TrueTypeGlyphProviderDefinitionMixin",
+    "NativeImageMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  },
+  "overwrites": {
+    "requireAnnotations": true
+  }
+}

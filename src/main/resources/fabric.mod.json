@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "id": "ttfrce",
+  "version": "${version}",
+  "name": "TTF RCE Patch",
+  "description": "Patches the minecraft2shell vulnerability that could be used to execute code with just a resource pack.",
+  "authors": [
+    {
+      "name": "El Weirdo"
+    }
+  ],
+  "contact": {
+    "sources": "https://github.com/lithium-labs"
+  },
+  "license": "GPL-3.0",
+  "icon": "assets/ttfrce/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "el.weirdo.ttfrce.PatchClient"
+    ]
+  },
+  "mixins": [
+    "ttfrce.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric-api": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}
